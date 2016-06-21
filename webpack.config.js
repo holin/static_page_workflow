@@ -14,7 +14,7 @@ module.exports = {
 
   resolve: {
     modulesDirectories: [ "node_modules", __dirname + "/app/js" ]
-  }, 
+  },
 
   module: {
     loaders: [
@@ -25,14 +25,16 @@ module.exports = {
         query: {
           presets: ['es2015']
         }
-      }, {
+      },
+      {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract("style", "css")
-      }, {
+      },
+      {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract(
           "style",
-          "css!sass?includePaths[]=" + __dirname +  "/node_modules"
+          "css-loader?-url!sass?includePaths[]=" + __dirname +  "/node_modules"
         )
       }
     ]
