@@ -1,7 +1,7 @@
 {
   "repository": {},
   "scripts": {
-    "start": "webpack-dev-server --content-base ./public --watch-stdin --colors --progress",
+    "start": "webpack-dev-server --content-base ./public --watch",
     "compile": "webpack -p"
   },
   "devDependencies": {

@@ -15,6 +15,8 @@ npm start #run develop server
 npm run compile #deploy
 ```
 
+visit: `http://localhost:8080/webpack-dev-server/index.html`
+
 ## Directory tree
 ```
 ├── README.md
